@@ -45,6 +45,7 @@ body {
   width: 100%;
   background-color: var(--main-yellow);
   border-bottom: 1px solid var(--main-black);
+  padding: 16px;
 }
 
 .main-nav ul {
@@ -103,14 +104,26 @@ body {
     align-items: center;
     margin-left: auto;
     align-self: baseline;
-    background-color: none;
+    background: none;
     border: none;
     cursor: pointer;
   }
+
+  .main-nav img {
+    width: 20px;
+  }
 }
 
+/* Hero */
 
+.hero {
+  min-height: 750px;
+  padding-top: 200px;
+  background-image: url(ressources/hero-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
-.main-nav img {
+.hero img {
   width: 20px;
 }

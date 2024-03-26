@@ -8,6 +8,11 @@
       Le Barbier de Paris - Spécialiste de la barbe et des coupes de cheveux
       pour homme.
     </title>
+    <meta
+      name="description"
+      content="Un barbier traditionnel en plein Paris ! Nous vous recevons dans un cadre à l'ancienne pour s'occuper de votre barbe et de vos cheveux."
+    />
+    <link rel="icon" href="ressources/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,23 +23,25 @@
   </head>
   <body>
 
-    <!-- header -->
-    <header id="acceuil">
+    <!-- Header -->
+
+    <header id="accueil">
       <nav class="main-nav">
-        <button class="nav-toggler"
-        aria-controls="main-navlist"
-        aria-expanded="false"
+        <button
+          aria-controls="main-navlist"
+          aria-expanded="false"
+          class="nav-toggler"
         >
-          <img src="ressources/hamburger.svg" alt="ouvrir et fermer le menu">
+          <img src="ressources/hamburger.svg" alt="Ouvrir et fermer le menu" />
         </button>
         <ul id="main-navlist">
-          <li><a href="accueil">Acceuil</a></li>
-          <li><a href="valeurs">Valeurs</a></li>
-          <li><a href="prestations">Préstation</a></li>
-          <li><a href="contact">Contact</a></li>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#valeurs">Nos valeurs</a></li>
+          <li><a href="#prestations">Prestations</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <!-- <div id="hero">
+      <div id="hero">
         <h1 class="main-title"> Votre barbier traditionnel</h1>
         <p class="main-subtitle">Rasoirs, peines et savoir-faire.</p>
 
@@ -49,7 +56,7 @@
         <a href="valeur" class="push-down-hero">
           <img src="ressources/chevron-down.svg" alt="Aller à la section nos valeurs">
         </a>
-      </div> -->
+      </div>
     </header>
 
     <script src="script.js"></script>
