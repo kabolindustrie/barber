@@ -530,6 +530,9 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .prestations-card {
+    max-width: 530px;
+  }
   .prestations-card:nth-child(1) {
     margin-right: 0;
     margin-bottom: 36px;
@@ -557,5 +560,98 @@ body {
   }
   .prestation-list p {
     font-size: var(--fs-14);
+  }
+}
+
+/* Team section */
+
+.team {
+  padding: 50px 10px 150px;
+  background-color: var(--main-white);
+}
+.team .section-subtitle {
+  margin-bottom: 28px;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.team-card {
+  flex-shrink: 0;
+  width: 300px;
+  color: var(--main-yellow);
+  box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+  margin: 20px;
+  border-radius: 5px;
+  background-color: var(--main-black);
+  background-image: repeating-linear-gradient(
+      90deg,
+      hsla(57, 0%, 42%, 0.09) 0px,
+      hsla(57, 0%, 42%, 0.09) 1px,
+      transparent 1px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      hsla(57, 0%, 42%, 0.09) 0px,
+      hsla(57, 0%, 42%, 0.09) 1px,
+      transparent 1px,
+      transparent 60px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      hsla(57, 0%, 42%, 0.09) 0px,
+      hsla(57, 0%, 42%, 0.09) 1px,
+      transparent 1px,
+      transparent 10px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(57, 0%, 42%, 0.09) 0px,
+      hsla(57, 0%, 42%, 0.09) 1px,
+      transparent 1px,
+      transparent 10px
+    ),
+    linear-gradient(90deg, rgb(20, 20, 20), rgb(20, 20, 20));
+}
+.profile-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.card-content {
+  padding: 20px;
+}
+.top-card-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.card-name {
+  font-size: var(--fs-20);
+}
+.top-card-content img {
+  width: 24px;
+  cursor: pointer;
+}
+.top-card-content a:nth-child(2) {
+  margin-left: auto;
+  margin-right:  8px;
+}
+
+@media (max-width: 1024px) {
+  .team {
+    padding: 50px 20px 100px;
+  }
+}
+
+@media (max-width: 750px) {
+  .team-card {
+    width: 100%;
+    max-width: 430px;
   }
 }
