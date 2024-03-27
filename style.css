@@ -405,7 +405,7 @@ visibility 0.3s ease-out;
 .dots {
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
 }
 
 .dot {
