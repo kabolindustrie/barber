@@ -51,3 +51,22 @@ function fadeSlideshow(e) {
 }
 
 fadeIntervalID = window.setInterval(fadeSlideshow, 3500)
+
+// Smooth scroll
+
+const smoothScrollLinks = [
+  ...navLinks,
+  ...document.querySelectorAll(".hero a")
+]
+
+smoothScrollLinks.forEach(link => link.addEventListener("click", handleSmoothScroll));
+
+function handleSmoothScroll(e) {
+  e.preventDefault();
+  const linkHref = e.target.getAttribute("href").substring(1);
+  window.scrollTo({
+    top: document.getElementById(linkHref).offsetTop * 0.95,
+    behavior: "smooth"
+  })
+  window.history.pushState("", "", `${document.location.pathname}#${linkHref}`)
+}
