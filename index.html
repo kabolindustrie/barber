@@ -430,5 +430,28 @@
       <a href="#"> Thème Barber, Tous droits réservés </a>
     </footer>
     <script src="script.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCIl5M8OhIzes2QICtvZRiEMyU6TPowPlk",
+        authDomain: "the-barber-show.firebaseapp.com",
+        projectId: "the-barber-show",
+        storageBucket: "the-barber-show.appspot.com",
+        messagingSenderId: "537607986054",
+        appId: "1:537607986054:web:7ec584a78140f202b0ea07",
+        measurementId: "G-SX4S8SPW59"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
